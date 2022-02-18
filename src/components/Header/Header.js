@@ -1,90 +1,121 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [active, setActive] = useState("");
+
   return (
-    <div>
-      <nav class="w-full py-6 bg-white">
-        <div class="flex items-center justify-between mx-auto xl:max-w-7xl lg:max-w-5xl md:max-w-3xl md:px-2 px-4">
-          <section class="flex items-center text-gray-900 space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M9.504 1.132a1 1 0 01.992 0l1.75 1a1 1 0 11-.992 1.736L10 3.152l-1.254.716a1 1 0 11-.992-1.736l1.75-1zM5.618 4.504a1 1 0 01-.372 1.364L5.016 6l.23.132a1 1 0 11-.992 1.736L4 7.723V8a1 1 0 01-2 0V6a.996.996 0 01.52-.878l1.734-.99a1 1 0 011.364.372zm8.764 0a1 1 0 011.364-.372l1.733.99A1.002 1.002 0 0118 6v2a1 1 0 11-2 0v-.277l-.254.145a1 1 0 11-.992-1.736l.23-.132-.23-.132a1 1 0 01-.372-1.364zm-7 4a1 1 0 011.364-.372L10 8.848l1.254-.716a1 1 0 11.992 1.736L11 10.58V12a1 1 0 11-2 0v-1.42l-1.246-.712a1 1 0 01-.372-1.364zM3 11a1 1 0 011 1v1.42l1.246.712a1 1 0 11-.992 1.736l-1.75-1A1 1 0 012 14v-2a1 1 0 011-1zm14 0a1 1 0 011 1v2a1 1 0 01-.504.868l-1.75 1a1 1 0 11-.992-1.736L16 13.42V12a1 1 0 011-1zm-9.618 5.504a1 1 0 011.364-.372l.254.145V16a1 1 0 112 0v.277l.254-.145a1 1 0 11.992 1.736l-1.735.992a.995.995 0 01-1.022 0l-1.735-.992a1 1 0 01-.372-1.364z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <a
-              href="#"
-              class="font-bold text-xl focus:ring focus:ring-purple-500 focus:ring-opacity-25 outline-none rounded-lg"
-            >
-              BRAND
-            </a>
-          </section>
-          <section>
-            <ul class="md:space-x-8 space-x-6 text-gray-900 font-semibold hidden md:flex">
-              <li>
-                <Link
-                  to="/home"
-                  className="bg-purple-500 px-4 py-1 rounded-xl text-white hover:bg-purple-400 active:bg-purple-600 focus:ring focus:ring-purple-500 focus:ring-opacity-25 outline-none"
-                  //   class="group focus:ring focus:ring-purple-500 focus:ring-opacity-25 outline-none rounded-lg"
-                >
-                  {" "}
-                  Home{" "}
-                </Link>
-                <div class="w-full h-0.5 bg-transparent group-hover:bg-purple-500 transition-al absolute bottom-0" />
-              </li>
-              <li class="relative group">
-                <Link
-                  to="/models"
-                  class="focus:ring focus:ring-purple-500 focus:ring-opacity-25 outline-none rounded-lg"
-                >
-                  Our Models
-                </Link>
-                <div class="w-full h-0.5 bg-transparent group-hover:bg-purple-500 transition-al absolute bottom-0" />
-              </li>
-              <li class="relative group">
-                <a
-                  href="#"
-                  class="focus:ring focus:ring-purple-500 focus:ring-opacity-25 outline-none rounded-lg"
-                >
-                  About us
-                </a>
-                <div class="w-full h-0.5 bg-transparent group-hover:bg-purple-500 transition-al absolute bottom-0" />
-              </li>
-              <li class="relative group">
-                <a
-                  href="#"
-                  class="focus:ring focus:ring-purple-500 focus:ring-opacity-25 outline-none rounded-lg"
-                >
-                  Contact us
-                </a>
-                <div class="w-full h-0.5 bg-transparent group-hover:bg-purple-500 transition-al absolute bottom-0" />
-              </li>
-            </ul>
-            <button class="flex md:hidden hover:bg-gray-100 p-2 rounded-full transition-all focus:ring focus:ring-purple-500 focus:ring-opacity-25 active:bg-gray-200 outline-none">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+    <nav class="bg-white shadow-lg">
+      <div class=" mx-auto px-4">
+        <div class="flex ">
+          <div className="flex-none">
+            {/* <!-- Website Logo --> */}
+            <Link to="/home" class="flex items-center py-4 px-2">
+              <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2" />
+              <span class="font-semibold text-gray-500 text-lg">
+                Navigation
+              </span>
+            </Link>
+          </div>
+          <div class="flex-auto w-32 justify-end space-x-7">
+            {/* <!-- Primary Navbar items --> */}
+            <div class="hidden md:flex  justify-end flex-end items-center space-x-1">
+              <NavLink
+                to="/home"
+                activeClassName="py-4 px-2 text-purple-500 border-b-4 border-purple-500 font-semibold "
+                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                />
+                Home
+              </NavLink>
+              <NavLink
+                to="/models"
+                activeClassName="py-4 px-2 text-purple-500 border-b-4 border-purple-500 font-semibold "
+                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+              >
+                Our Models
+              </NavLink>
+              <NavLink
+                to="/about-us"
+                activeClassName="py-4 px-2 text-purple-500 border-b-4 border-purple-500 font-semibold "
+                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+              >
+                About us
+              </NavLink>
+              <NavLink
+                to="/contact"
+                activeClassName="py-4 px-2 text-purple-500 border-b-4 border-purple-500 font-semibold "
+                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+              >
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class=" w-6 h-6 text-gray-500 hover:text-purple-500 "
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
-          </section>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+      {/* <!-- mobile menu --> */}
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <Link
+              to="/home"
+              class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/models"
+              class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300"
+            >
+              Our Models
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about-us"
+              class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300"
+            >
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+      {/* <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script> */}
+    </nav>
   );
 };
 

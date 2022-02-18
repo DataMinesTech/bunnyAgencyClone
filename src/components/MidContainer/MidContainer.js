@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "../Layout/Accordion";
+import CardCarousel from "../Layout/CardCarousel.js/CardCarousel";
 
 const MidContainer = () => {
   return (
@@ -16,7 +17,7 @@ const MidContainer = () => {
 
         <div class="flex max-w-6xl mx-auto">
           <div class="container relative flex flex-col w-1/2 px-10 pb-1 pr-12 text-2xl font-hairline text-white">
-            <p className="font-serif	">About</p>
+            <h2 className="font-serif text-4xl text-gray-400">About</h2>
             <h2 class="relative z-20 text-5xl font-extrabold leading-tight text-white">
               <br /> Who We Are
             </h2>
@@ -78,11 +79,11 @@ const MidContainer = () => {
         </div>
       </div>
       <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
-        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl py-3 m-2">
+        <div class="max-w-xs mx-auto bg-white shadow-2xl drop-shadow-2xl shadow-green-500/50  rounded-xl p-5 py-3 m-2">
           <div class="ml-3">
-            <h1 class="text-lg font-bold my-3 py-2"> Loyalty </h1>
+            <h1 class="text-2xl font-bold my-3 py-2 text-center"> Loyalty </h1>
           </div>
-          <p className="text-gray-700 text-lg font-semibold">
+          <p className="text-gray-700 text-lg  font-semibold">
             {" "}
             Loyalty is indispensable to us. We need loyality to offer you
             maximum success and to reach your full potential. Loyality is the
@@ -90,9 +91,12 @@ const MidContainer = () => {
             loyal we wont work together.
           </p>
         </div>
-        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl m-2">
+        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-cyan-500/50  m-2">
           <div class="ml-3">
-            <h2 class="text-lg font-bold my-3 py-2"> Individuality </h2>
+            <h2 class="text-2xl font-bold my-3 py-2 text-center">
+              {" "}
+              Individuality{" "}
+            </h2>
           </div>
           <p className="text-gray-700 text-lg font-semibold">
             {" "}
@@ -101,9 +105,12 @@ const MidContainer = () => {
             niche.
           </p>
         </div>
-        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl m-2">
+        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-blue-500/50  m-2">
           <div class="ml-3">
-            <h2 class="text-lg font-bold my-3 py-2"> Discretion </h2>
+            <h2 class="text-2xl font-bold my-3 py-2 text-center">
+              {" "}
+              Discretion{" "}
+            </h2>
           </div>
           <p className="text-gray-700 text-lg font-semibold">
             {" "}
@@ -113,9 +120,12 @@ const MidContainer = () => {
             everything remains between us. You can count on our promise
           </p>
         </div>
-        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl m-2">
+        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-indigo-500/50  m-2">
           <div class="ml-3">
-            <h2 class="text-lg font-bold my-3 py-2"> Professionality </h2>
+            <h2 class="text-2xl font-bold my-3 py-2 text-center">
+              {" "}
+              Professionality{" "}
+            </h2>
           </div>
 
           <p className="text-gray-700 text-lg font-semibold">
@@ -154,6 +164,8 @@ const MidContainer = () => {
           </div>
         </div>
       </div>
+
+      <CardCarousel />
     </div>
   );
 };

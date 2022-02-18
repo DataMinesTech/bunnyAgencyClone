@@ -45,24 +45,23 @@ const BeforeAfter = () => {
       >
         <img
           class="absolute inset-0 h-full w-full object-cover pointer-events-none"
-          src="https://wallpapers.hector.me/wavey/Rainbow%20iPhone%20P3.jpg"
+          src="https://bunny-agency.com/wp-content/uploads/2021/12/1.png"
         />
         <img
           style={{
-            filter: "grayscale(100%)",
             clipPath: `polygon(0 0,${imageReveal * 100}% 0,${
               imageReveal * 100
             }% 100%,0 100%)`,
           }}
           className="absolute inset-0 h-full w-full object-cover pointer-events-none"
-          src="https://wallpapers.hector.me/wavey/Rainbow%20iPhone%20P3.jpg"
+          src="https://bunny-agency.com/wp-content/uploads/2022/02/Screenshot-2022-02-04-at-13.14.33.png"
         />
         <div
           style={{ left: `${imageReveal * 100}%` }}
           className="absolute inset-0 group-hover:opacity-100 sm:opacity:0 "
         >
           <div className="relative h-full opacity-50 hover:opacity-100">
-            <div className="absolute inset-y-0 bg-white w-0.5 -ml-px "></div>
+            <div className="absolute inset-y-0 bg-black w-0.5 -ml-px "></div>
             <div
               style={{ touchAction: "none" }}
               onMouseDown={handleMouseDown}
