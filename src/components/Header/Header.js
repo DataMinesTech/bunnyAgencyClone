@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(false);
 
   return (
     <nav class="bg-white shadow-lg">
@@ -24,14 +24,14 @@ const Header = () => {
               <NavLink
                 to="/home"
                 activeClassName="py-4 px-2 text-purple-500 border-b-4 border-purple-500 font-semibold "
-                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-400"
               >
                 Home
               </NavLink>
               <NavLink
                 to="/models"
                 activeClassName="py-4 px-2 text-purple-500 border-b-4 border-purple-500 font-semibold "
-                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+                className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-400"
               >
                 Our Models
               </NavLink>
@@ -53,7 +53,12 @@ const Header = () => {
           </div>
 
           <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
+            <button
+              class="outline-none mobile-menu-button "
+              onClick={() => {
+                setActive(!active);
+              }}
+            >
               <svg
                 class=" w-6 h-6 text-gray-500 hover:text-purple-500 "
                 x-show="!showMenu"
@@ -70,8 +75,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* <!-- mobile menu --> */}
-      <div class="hidden mobile-menu">
+
+      <div className={active ? "mobile-menu" : "hidden mobile-menu"}>
         <ul class="">
           <li class="active">
             <Link
@@ -100,6 +105,7 @@ const Header = () => {
           <li>
             <Link
               to="/contact"
+              onClick={() => setActive(false)}
               class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300"
             >
               Contact Us
@@ -107,6 +113,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
       {/* <script>
       const btn = document.querySelector("button.mobile-menu-button");
       const menu = document.querySelector(".mobile-menu");

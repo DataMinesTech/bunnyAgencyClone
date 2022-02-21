@@ -1,4 +1,5 @@
 import React from "react";
+import CardComponent from "../CardComponent/CardComponent";
 import Accordion from "../Layout/Accordion";
 import CardCarousel from "../Layout/CardCarousel.js/CardCarousel";
 
@@ -164,7 +165,7 @@ const MidContainer = () => {
           </div>
         </div>
       </div>
-
+      <CardComponent />
       <CardCarousel />
     </div>
   );
