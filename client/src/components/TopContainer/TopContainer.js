@@ -31,7 +31,7 @@ const TopContainer = () => {
             </p>
             <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
               <Link
-                to="/contact"
+                to="/apply-now"
                 class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-green-400 hover:bg-green-500 rounded-2xl sm:w-auto sm:mb-0"
               >
                 Get Started

@@ -7,19 +7,19 @@ const ModelsAbout = () => {
         <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
           <div class="w-full lg:w-1/2">
             <div class=" ml-20">
-              <h3 className="font-bold text-xl text-white">
+              <h3 className="font-bold text-xl text-black dark:text-white">
                 Before working with us
               </h3>
               <br />
               <div>
-                <p className="text-lg font-normal text-white mr-8">
+                <p className="text-lg font-normal text-black dark:text-white mr-8">
                   Before our partnership she only had a few fans and didn’t know
                   how to gain more fans. Her account stagnated and didn’t grow
                   at all.
                 </p>
               </div>
               <br />
-              <div className="text-white text-xl font-bold">
+              <div className="text-black dark:text-white text-xl font-bold">
                 <p>Since the beginning of our cooperation</p>
               </div>
 
@@ -73,12 +73,12 @@ const ModelsAbout = () => {
 
           <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
             <div class="lg:max-w-lg ml-8">
-              <h3 className="font-bold text-xl text-black">
+              <h3 className="font-bold text-xl text-white dark:text-black">
                 Before working with us
               </h3>
               <br />
               <div>
-                <p className="text-lg font-normal text-black ">
+                <p className="text-lg font-normal text-white dark:text-black">
                   Before our partnership she only had a few fans and didn’t know
                   how to gain more fans. Her account stagnated and didn’t grow
                   at all.
@@ -128,19 +128,19 @@ const ModelsAbout = () => {
         <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
           <div class="w-full ml-4  lg:w-1/2">
             <div class=" ml-20">
-              <h3 className="font-bold text-xl text-white">
+              <h3 className="font-bold text-xl text-black dark:text-white">
                 Before working with us
               </h3>
               <br />
               <div>
-                <p className="text-lg font-normal text-white mr-8">
+                <p className="text-lg font-normal text-black dark:text-white mr-8">
                   Before our partnership she only had a few fans and didn’t know
                   how to gain more fans. Her account stagnated and didn’t grow
                   at all.
                 </p>
               </div>
               <br />
-              <div className="text-white text-xl font-bold">
+              <div className="text-black dark:text-white text-xl font-bold">
                 <p>Since the beginning of our cooperation</p>
               </div>
 
