@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Feedback from "../Layout/Feedback";
 import axios from "axios";
+import CTA from "../Layout/CTA/CTA";
 
 const Apply = () => {
   const [user, setUser] = useState({
@@ -84,10 +85,9 @@ const Apply = () => {
         <div class="container max-w-screen-lg mx-auto">
           <div>
             <h1 class="text-5xl py-10 text-center text-gray-800 font-black leading-7 md:leading-10">
-              About Our
               <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 {" "}
-                Models
+                Apply Now
               </span>
             </h1>
 
@@ -262,6 +262,7 @@ const Apply = () => {
           </div>
         </div>
       </div>
+      <CTA />
       {/* <Feedback /> */}
     </div>
   );

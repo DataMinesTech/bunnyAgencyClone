@@ -13,6 +13,7 @@ const TopContainer = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
+
           maxWidth: "100%",
         }}
       >

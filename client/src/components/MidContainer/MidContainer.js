@@ -2,6 +2,7 @@ import React from "react";
 import CardComponent from "../CardComponent/CardComponent";
 import Accordion from "../Layout/Accordion";
 import CardCarousel from "../Layout/CardCarousel.js/CardCarousel";
+import CTA from "../Layout/CTA/CTA";
 
 const MidContainer = () => {
   return (
@@ -123,7 +124,7 @@ const MidContainer = () => {
             everything remains between us. You can count on our promise
           </p>
         </div>
-        <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-indigo-500/50  m-2">
+        <div class="max-w-xs mx-auto bg-white  rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-indigo-500/50  m-2">
           <div class="ml-3">
             <h2 class="text-2xl font-bold my-3 py-2 text-center">
               {" "}
@@ -140,7 +141,11 @@ const MidContainer = () => {
           </p>
         </div>
       </div>
-      <div className="py-10">
+      <div className="mt-12">
+        <CTA />
+      </div>
+
+      <div className="py-6">
         <div class="flex bg-white" style={{ height: "600px" }}>
           <div class=" my-28 items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
             <div className="mb-5">

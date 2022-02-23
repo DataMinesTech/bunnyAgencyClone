@@ -1,6 +1,7 @@
 import React from "react";
 import CardComponent from "../CardComponent/CardComponent";
 import AccordionHome from "../Layout/AccordionHome";
+import CTA from "../Layout/CTA/CTA";
 import MidContainer from "../MidContainer/MidContainer";
 import TopContainer from "../TopContainer/TopContainer";
 

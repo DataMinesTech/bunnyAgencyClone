@@ -112,11 +112,17 @@ export const Footer = () => {
                 <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
               </svg>
             </a>
-            <a></a>
+            <a
+              href="https://onlyfans.com/bunnyagency"
+              className="transition-colors duration-300 hover:text-green-400 text-white"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-6">
+                <path d="M14 9v2h-4v-2c0-1.104.897-2 2-2s2 .896 2 2zm10 3c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-8-1h-1v-2c0-1.656-1.343-3-3-3s-3 1.344-3 3v2h-1v6h8v-6z" />
+              </svg>
+            </a>
           </div>
           <p className="mt-4 text-sm text-white">
-            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-            spare ribs salami.
+            Join us Today on our Social Media Platforms.
           </p>
         </div>
       </div>
