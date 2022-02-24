@@ -1,5 +1,6 @@
 import React from "react";
 import Benifits from "../Layout/Benifits";
+import CTA from "../Layout/CTA/CTA";
 import MetaData from "../Layout/MetaData/MetaData";
 import TeamStats from "../Layout/TeamStats";
 
@@ -47,6 +48,9 @@ const AboutUs = () => {
         </section>
         <TeamStats />
         <Benifits />
+
+        <CTA />
+
         {/* <div className="mx-48 mt-12 my-24">
         <div class="p-6 bg-gradient-to-r from-green-400 to-purple-500 text-gray-500 bg-white shadow-2xl border border-gray-100 rounded-2xl font-medium">
           <h1 class="text-5xl text-center text-gray-800 font-black leading-7 md:leading-10">

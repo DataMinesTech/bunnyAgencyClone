@@ -267,7 +267,7 @@ const Apply = () => {
             </div>
           </div>
         </div>
-        <CTA />
+        {/* <CTA /> */}
         {/* <Feedback /> */}
       </div>
     </>

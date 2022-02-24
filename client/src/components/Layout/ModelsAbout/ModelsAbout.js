@@ -85,7 +85,7 @@ const ModelsAbout = () => {
                 </p>
               </div>
               <br />
-              <div className="text-black text-xl font-bold">
+              <div className="text-white dark:text-black text-xl font-bold">
                 <p>Since the beginning of our cooperation</p>
               </div>
 

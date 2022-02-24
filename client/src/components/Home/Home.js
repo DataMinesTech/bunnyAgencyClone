@@ -17,6 +17,7 @@ const Home = () => {
         {/* <div className="mx-12 mb-10">
         <AccordionHome />
       </div> */}
+        <CTA />
       </div>
     </>
   );

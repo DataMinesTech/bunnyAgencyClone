@@ -92,7 +92,7 @@ const Accordion = () => {
                   </header>
                   {activeAccordion === data.id ? (
                     <div>
-                      <div class="pl-8 pr-8 pb-5 text-grey-darkest min-w-full">
+                      <div class="pl-8 text-left pr-8 pb-5 text-grey-darkest min-w-full">
                         {data.desc.map((descripton) => {
                           return (
                             <ul class="pl-4">
