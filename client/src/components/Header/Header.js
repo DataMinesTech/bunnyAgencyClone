@@ -11,7 +11,13 @@ const Header = () => {
         <div class="flex ">
           <div className="flex-none">
             {/* <!-- Website Logo --> */}
-            <NavLink to="/" class="flex items-center py-4 px-2">
+            <NavLink
+              to="/"
+              onClick={() => {
+                setActive(false);
+              }}
+              class="flex items-center py-4 px-2"
+            >
               <span class="font-semibold text-black text-lg">
                 THE BUNNY AGENCY
               </span>
@@ -70,16 +76,9 @@ const Header = () => {
 
       <div className={active ? "mobile-menu" : "hidden mobile-menu"}>
         <ul class="">
-          <li class="active">
-            <Link
-              to="/home"
-              class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold"
-            >
-              Home
-            </Link>
-          </li>
           <li>
             <Link
+              onClick={() => setActive(false)}
               to="/models"
               class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300"
             >
@@ -88,6 +87,7 @@ const Header = () => {
           </li>
           <li>
             <Link
+              onClick={() => setActive(false)}
               to="/about-us"
               class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300"
             >

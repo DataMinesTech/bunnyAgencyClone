@@ -19,7 +19,7 @@ const TopContainer = () => {
       >
         <div className="h-screen grid place-items-center">
           <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-            <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+            <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-normal  text-gray-900 md:text-6xl md:tracking-tight">
               <span>OnlyFans</span>{" "}
               <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 Marketing and Management
