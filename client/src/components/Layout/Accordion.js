@@ -24,16 +24,16 @@ const Accordion = () => {
                 <div
                   className={
                     activeAccordion === data.id
-                      ? "border-l-2 bg-grey-400 border-indigo-800 w-full p-2 mx-auto pl-8 pr-8"
-                      : "border-l-2 border-transparent w-full p-2 mx-auto pl-8 pr-8"
+                      ? "border-l-2 bg-grey-400 border-indigo-800 w-full p-2 mx-auto px-5"
+                      : "border-l-2 border-transparent w-full p-2 mx-auto px-5"
                   }
                 >
-                  <header class="flex justify-between items-center p-2 mx-auto pl-8 pr-8  cursor-pointer select-none">
+                  <header class="flex justify-between items-center p-2 mx-auto px-5 cursor-pointer select-none">
                     <span
                       className={
                         activeAccordion === data.id
-                          ? "text-indigo-800 font-semibold text-xl"
-                          : "text-grey-darkest font-thin text-xl"
+                          ? "text-indigo-800 text-left font-semibold md:text-xl"
+                          : "text-grey-darkest text-left md:text-xl"
                       }
                     >
                       {data.title}
@@ -56,7 +56,7 @@ const Accordion = () => {
                             class="h-6 w-6"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke="currentColor"
+                            stroke="#FFFFFF"
                           >
                             <path
                               stroke-linecap="round"
@@ -92,14 +92,12 @@ const Accordion = () => {
                   </header>
                   {activeAccordion === data.id ? (
                     <div>
-                      <div class="pl-8 text-left pr-8 pb-5 text-grey-darkest min-w-full">
-                        {data.desc.map((descripton) => {
-                          return (
-                            <ul class="pl-4">
-                              <li class="pb-2">{descripton}</li>
-                            </ul>
-                          );
-                        })}
+                      <div class="text-left text-grey-darkest min-w-full px-5 py-5">
+                        <ul class="space-y-4">
+                          {data.desc.map((descripton) => {
+                            return <li clas>{descripton}</li>;
+                          })}
+                        </ul>
                       </div>
                     </div>
                   ) : (

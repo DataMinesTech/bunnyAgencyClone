@@ -18,7 +18,7 @@ const CTA = () => {
             <span class="block">Want to Join the Team ?</span>
             <span class="block text-indigo-500">It&#x27;s today or never.</span>
           </h2>
-          <div class="lg:mt-0 lg:flex-shrink-0">
+          <div class="mt-5 lg:mt-0 lg:flex-shrink-0">
             <div class=" inline-flex rounded-md shadow">
               <Link to="/apply-now">
                 <button

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="px-4 pt-12 mx-auto bg-gray-800 sm:max-w-xl md:max-w-full  md:px-24 lg:px-8">
-      <div className="flex justify-between pb-10">
+      <div className="md:flex justify-between pb-10 space-y-10 md:space-y-0">
         <div className="sm:col-span-2">
           <Link
             to="/"
@@ -40,7 +40,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className=" text-sm">
+        <div className="text-sm">
           <p className="text-base font-bold tracking-wide text-white">
             Contacts
           </p>
@@ -76,9 +76,7 @@ export const Footer = () => {
               title="Our address"
               className="transition-colors duration-300 text-white"
             >
-              Sedanstraße 14 89077
-              <br />
-              Ulm Germany
+              Sedanstraße 14 89077 Ulm Germany
             </a>
           </div>
         </div>

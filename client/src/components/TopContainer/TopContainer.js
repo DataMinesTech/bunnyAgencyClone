@@ -7,7 +7,7 @@ const TopContainer = () => {
   return (
     <div>
       <div
-        class="bg-fixed h-screen  bg-no-repeat "
+        class="bg-fixed bg-black"
         style={{
           backgroundImage: `url("https://images.pexels.com/photos/3155674/pexels-photo-3155674.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`,
           backgroundRepeat: "no-repeat",
@@ -17,16 +17,16 @@ const TopContainer = () => {
           maxWidth: "100%",
         }}
       >
-        <div className="h-screen grid place-items-center">
+        <div className="h-screen grid place-items-center px-5 md:px-0">
           <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-            <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-normal  text-gray-900 md:text-6xl md:tracking-tight">
+            <h1 class="mb-8 text-3xl font-extrabold leading-none tracking-normal  text-gray-900 md:text-6xl md:tracking-tight">
               <span>OnlyFans</span>{" "}
               <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 Marketing and Management
               </span>{" "}
               <span>at the highest level 🚀</span>
             </h1>
-            <p class="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
+            <p class="px-0 mb-8 text-lg text-white md:text-gray-600 md:text-xl lg:px-24">
               With discretion, loyalty and trust to unimaginable success.
             </p>
             <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">

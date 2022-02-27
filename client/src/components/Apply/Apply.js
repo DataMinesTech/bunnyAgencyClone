@@ -95,7 +95,7 @@ const Apply = () => {
               </h1>
 
               <form
-                class="bg-white mx-40 rounded shadow-lg p-4 px-4 md:p-8 mb-6"
+                class="bg-white md:mx-40 rounded shadow-lg p-4 px-4 md:p-8 mb-6"
                 method="POST"
                 onSubmit={submitHandler}
               >

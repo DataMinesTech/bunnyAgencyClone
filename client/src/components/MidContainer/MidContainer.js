@@ -8,7 +8,7 @@ const MidContainer = () => {
   return (
     <div>
       <div
-        class="relative flex flex-col items-center justify-center min-h-screen bg-cover min-w-screen"
+        class="relative flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen bg-cover min-w-screen"
         style={{
           backgroundImage: `url(
             "https://images.unsplash.com/photo-1536869338989-e7ffd2297454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -17,15 +17,15 @@ const MidContainer = () => {
       >
         <div class="absolute inset-0 w-full h-full bg-black bg-opacity-75"></div>
 
-        <div class="flex max-w-6xl mx-auto">
-          <div class="container relative flex flex-col w-1/2 px-10 pb-1 pr-12 text-2xl font-hairline text-white">
+        <div class="md:flex md:max-w-6xl mx-auto px-5 md:px-0">
+          <div class="container relative flex flex-col md:w-1/2 md:px-10 pb-1 text-2xl font-hairline text-white">
             <h2 className="font-serif text-4xl text-gray-400">
               <br />
             </h2>
-            <h2 class=" z-20 text-5xl font-extrabold leading-tight text-white">
+            <h2 class=" z-20 text-4xl md:text-5xl font-extrabold leading-tight text-white">
               Who We Are
             </h2>
-            <p class="relative z-20 block mt-4 text-xl">
+            <p class="relative z-20 block mt-4 text-lg md:text-xl">
               We've created the ultimate resource for turning your culture into
               a super-powered productivity machine by encouraging collaboration
               growth, and incentives! The Bunny Agency is a German Only
@@ -48,7 +48,7 @@ const MidContainer = () => {
               </a>
             </div> */}
           </div>
-          <div class="relative w-1/2 overflow-hidden rounded-lg shadow-2xl cursor-pointer group">
+          <div class="relative my-10 md:my-0 md:w-1/2 overflow-hidden rounded-lg shadow-2xl cursor-pointer group">
             <div class="absolute flex items-center justify-center w-full h-full bg-black bg-opacity-25">
               <span class="flex items-center justify-center w-20 h-20 bg-white bg-opacity-75 rounded-full">
                 <svg
@@ -71,24 +71,25 @@ const MidContainer = () => {
         </div>
       </div>
 
-      <div class="flex flex-wrap justify-center text-center mb-24 mt-12">
+      <div class="flex flex-wrap justify-center text-center mb-5 md:mb-24 mt-12">
         <div class="w-full lg:w-6/12 px-4">
-          <h1 class="text-gray-900 text-4xl font-bold mb-8">Our Core Values</h1>
+          <h1 class="text-gray-900 text-4xl md:text-5xl font-bold mb-3 md:mb-5">
+            Our Core Values
+          </h1>
 
-          <p class="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-18">
+          <p class="px-0 text-gray-600 md:text-xl lg:px-18">
             Through years of experience as an OnlyFans Agency, we know exactly
             how we can fully fulfill your potential and conquer the world of men
             for you.
           </p>
         </div>
       </div>
-      <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
+      <div class="md:mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
         <div class="max-w-xs mx-auto bg-white shadow-2xl drop-shadow-2xl shadow-green-500/50  rounded-xl p-5 py-3 m-2">
-          <div class="ml-3">
-            <h1 class="text-2xl font-bold my-3 py-2 text-center"> Loyalty </h1>
+          <div>
+            <h1 class="text-2xl font-bold my-3 py-2 text-center">Loyalty</h1>
           </div>
-          <p className="text-gray-700 text-lg  font-semibold">
-            {" "}
+          <p className="leading-loose md:text-lg md:leading-relaxed">
             Loyalty is indispensable to us. We need loyality to offer you
             maximum success and to reach your full potential. Loyality is the
             most important thing for us. If we have any doubt that you are not
@@ -96,28 +97,22 @@ const MidContainer = () => {
           </p>
         </div>
         <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-cyan-500/50  m-2">
-          <div class="ml-3">
+          <div>
             <h2 class="text-2xl font-bold my-3 py-2 text-center">
-              {" "}
-              Individuality{" "}
+              Individuality
             </h2>
           </div>
-          <p className="text-gray-700 text-lg font-semibold">
-            {" "}
+          <p className="leading-loose md:text-lg md:leading-relaxed">
             No matter where you come from or how successful you already are, we
             can always help you become more successful & find your perfect
             niche.
           </p>
         </div>
         <div class="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-blue-500/50  m-2">
-          <div class="ml-3">
-            <h2 class="text-2xl font-bold my-3 py-2 text-center">
-              {" "}
-              Discretion{" "}
-            </h2>
+          <div>
+            <h2 class="text-2xl font-bold my-3 py-2 text-center">Discretion</h2>
           </div>
-          <p className="text-gray-700 text-lg font-semibold">
-            {" "}
+          <p className="leading-loose md:text-lg md:leading-relaxed">
             To reach your full potential and achieve maximum success, we will
             make you a promise. We’d sabotage ourself if we would took advantage
             of content and work. Therefore, all photos, videos, data and
@@ -125,15 +120,13 @@ const MidContainer = () => {
           </p>
         </div>
         <div class="max-w-xs mx-auto bg-white  rounded-xl p-5 shadow-2xl drop-shadow-2xl shadow-indigo-500/50  m-2">
-          <div class="ml-3">
+          <div>
             <h2 class="text-2xl font-bold my-3 py-2 text-center">
-              {" "}
-              Professionality{" "}
+              Professionality
             </h2>
           </div>
 
-          <p className="text-gray-700 text-lg font-semibold">
-            {" "}
+          <p className="leading-loose md:text-lg md:leading-relaxed">
             Because of many years of experience, we know exactly what matters
             and how to dominate this business. So that you too can master this
             business perfectly, we will show you exactly what to do and take go
@@ -141,11 +134,11 @@ const MidContainer = () => {
           </p>
         </div>
       </div>
-      <div className="mt-12"></div>
+      <div className="md:mt-12"></div>
 
-      <div className="py-6">
-        <div class="flex bg-white" style={{ height: "600px" }}>
-          <div class=" my-28 items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+      <div className="md:py-6">
+        <div class="flex bg-white">
+          <div class=" my-28 items-center text-center lg:text-left px-5 md:px-12 lg:w-1/2">
             <div className="mb-5">
               <h2 class="text-3xl text-center font-semibold text-gray-800 md:text-4xl">
                 Build Your New <span class="text-green-400">Idea</span>
@@ -154,7 +147,7 @@ const MidContainer = () => {
             <Accordion />
           </div>
           <div
-            class="hidden lg:block lg:w-1/2"
+            class="hidden lg:block lg:w-1/2 h-[600px]"
             style={{ clipPath: `polygon(10% 0, 100% 0%, 100% 100%, 0 100%)` }}
           >
             <div

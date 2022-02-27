@@ -3,9 +3,9 @@ import React from "react";
 const TeamStats = () => {
   return (
     <div>
-      <div class="flex items-center  my-20 ">
+      <div class="flex items-center md:my-20 ">
         <div class="container px-5 mx-auto ">
-          <h1 class="text-5xl py-10 text-center text-gray-800 font-black leading-7 md:leading-10">
+          <h1 class="text-4xl md:text-5xl py-10 text-center text-gray-800 font-black leading-7 md:leading-10">
             Some Numbers of
             <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
               {" "}

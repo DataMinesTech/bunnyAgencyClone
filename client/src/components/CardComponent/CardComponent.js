@@ -2,18 +2,18 @@ import React from "react";
 
 const CardComponent = () => {
   return (
-    <div>
-      <div className="mb-8 text-2xl text-center font-extrabold leading-none tracking-normal text-gray-900 md:text-5xl md:tracking-tight">
+    <div className="md:py-10">
+      <div className="mb-4 text-4xl text-center font-extrabold leading-none tracking-normal text-gray-900 md:text-5xl md:tracking-tight">
         <h1 className="block w-full py-2  text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline ">
           What makes The Bunny so special?
         </h1>
       </div>
       <div>
-        <p className="text-center text-xl font-semibold">
+        <p className="text-center md:text-xl">
           Our team makes this business as easy as possible for you, while having
           the most freedom and making the most money.
         </p>
-        <p className="text-center text-xl font-semibold">
+        <p className="text-center md:text-xl">
           We have a very unique approach and our female only expert team
           specializes on marketing, managing and content creation so you get an
           a+ experience.
