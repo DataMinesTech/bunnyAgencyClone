@@ -71,7 +71,7 @@ const ModelsAbout = () => {
             />
           </div>
 
-          <div class="flex items-center justify-center w-full md:h-96 lg:w-1/2">
+          <div class="flex items-center justify-center w-full md:h-96 lg:w-1/2 lg:ml-8">
             <div>
               <h3 className="font-bold text-2xl text-white dark:text-black">
                 Before working with us
