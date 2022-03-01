@@ -17,8 +17,6 @@ const AccordionHome = () => {
       <div className="w-full">
         <section class="shadow min-w-full">
           {AccordionHomeData.map((data) => {
-            console.log("data", data);
-
             return (
               <div className="">
                 <article class="border-b min-w-full" key={data.id}>

@@ -14,6 +14,7 @@ export const Footer = () => {
             <img
               src="https://bunny-agency.com/wp-content/uploads/2021/12/Only-Fans-Managemnt-2.png"
               className="w-8 h-8"
+              alt="bunny-logo"
             />
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
               Bunny Agency
@@ -33,11 +34,11 @@ export const Footer = () => {
                 Contact
               </li>
             </Link>
-            <Link to="/jobs">
+            {/* <Link to="/jobs">
               <li className="list-none text-white font-semibold mx-4">
                 Careers
               </li>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="text-sm">

@@ -14,13 +14,11 @@ const Accordion = () => {
 
   return (
     <div className="w-full">
-      <section class="shadow w-full">
+      <section className="shadow w-full">
         {AccordionData.map((data) => {
-          console.log("data", data);
-
           return (
             <div className="">
-              <article class="border-b w-full" key={data.id}>
+              <article className="border-b w-full" key={data.id}>
                 <div
                   className={
                     activeAccordion === data.id
@@ -28,7 +26,7 @@ const Accordion = () => {
                       : "border-l-2 border-transparent w-full p-2 mx-auto px-5"
                   }
                 >
-                  <header class="flex justify-between items-center p-2 mx-auto px-5 cursor-pointer select-none">
+                  <header className="flex justify-between items-center p-2 mx-auto px-5 cursor-pointer select-none">
                     <span
                       className={
                         activeAccordion === data.id
@@ -53,7 +51,7 @@ const Accordion = () => {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
+                            className="h-6 w-6"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="#FFFFFF"
@@ -74,7 +72,7 @@ const Accordion = () => {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
+                            className="h-6 w-6"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -92,8 +90,8 @@ const Accordion = () => {
                   </header>
                   {activeAccordion === data.id ? (
                     <div>
-                      <div class="text-left text-grey-darkest min-w-full px-5 py-5">
-                        <ul class="space-y-4">
+                      <div className="text-left text-grey-darkest min-w-full px-5 py-5">
+                        <ul className="space-y-4">
                           {data.desc.map((descripton) => {
                             return <li clas>{descripton}</li>;
                           })}
